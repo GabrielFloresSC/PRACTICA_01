@@ -22,12 +22,12 @@ int main ()
         digito = 1;
     } else {
         while (numero != 0) {
-            numero = numero / 10;
-            digito++;
+            numero = numero / 10; // por cada divison es un digito del numero hasta que llegue a 0
+            digito = digito + 1;
         }
     }
 
-    cout << "La cantidad de digitos del numero son:" << digito << endl;
+    cout << "La cantidad de digitos del numero son: " << digito << endl;
 
     return 0;
 }

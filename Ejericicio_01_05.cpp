@@ -1,7 +1,7 @@
 // Materia: Programación I, Paralelo 1
 // Autor: Gabriel Fernando Flores Santa Cruz
 // Fecha creación: 28/02/2024
-// Fecha modificación: 28/02/2024
+// Fecha modificación: 29/02/2024
 // Número de ejercicio: 5
 // Problema planteado: Número amigo 
 
@@ -26,7 +26,7 @@ int main(){
         if (amigo2 % i == 0)
             suma2 = suma2 + i;
     }
-    if (amigo1 == suma2 && amigo2 == suma1)
+    if (amigo1 == suma2 && amigo2 == suma1) //comparamos si las sumas son igual al otro numero
         cout << "Los numeros son amigos";
     else
         cout << "Los numeros no son amigos";
