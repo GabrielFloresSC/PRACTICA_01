@@ -1,7 +1,7 @@
 // Materia: Programación I, Paralelo 1
 // Autor: Gabriel Fernando Flores Santa Cruz
 // Fecha creación: 13/03/2024
-// Fecha modificación: 13/03/2024
+// Fecha modificación: 14/03/2024
 // Número de ejercicio: 4
 /* Problema planteado: Crea una única función (importante que sólo sea una) que sea capaz de calcular y
 retornar el área de un polígono.
@@ -20,10 +20,10 @@ int main (){
         do
         {
             cout << "Ingrese el tipo de poligono (1: Triangulo, 2: Cuadrado, 3: Rectangulo. Presione 0 si desea acabar con el proceso): ";
-            
             cin >> poligono;
             CalculoArea (poligono);
-        } while (poligono != 0);
+
+        } while (poligono != 0); //Manejamos do while ya que necesitamos que por lo menos suceda una vez la ejecucion
         
     return 0;
 }
@@ -31,7 +31,7 @@ int main (){
 void CalculoArea(int Poligono){
     double area,lado1 , lado2;
     area = 0.0;
-    switch (Poligono)
+    switch (Poligono)//Switch para seleccionar cual poligono fue seleccionado
     {
     case 1:
 
@@ -74,4 +74,6 @@ void CalculoArea(int Poligono){
         
         break;
     }
+//Todos los despliegues y calculos ocurren dentro del void
+
 }

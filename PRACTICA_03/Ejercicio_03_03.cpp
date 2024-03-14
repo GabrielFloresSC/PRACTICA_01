@@ -1,7 +1,7 @@
 // Materia: Programación I, Paralelo 1
 // Autor: Gabriel Fernando Flores Santa Cruz
 // Fecha creación: 13/03/2024
-// Fecha modificación: 13/03/2024
+// Fecha modificación: 14/03/2024
 // Número de ejercicio: 3
 /* Problema planteado: Escribe un programa que se encargue de comprobar si un número es o no primo. Hecho
 esto, imprime los números primos entre 1 y 100.*/ 
@@ -24,7 +24,7 @@ int main() {
 
 bool Primos(int numero) {
 
-    bool Switch; // almacenamos en este variable si es verdadero o falso
+    bool Switch; // almacenamos en esta variable si es verdadero o falso
 
     if (numero <= 1) { //todo digito menor a 1 no es un primo
         Switch = false;

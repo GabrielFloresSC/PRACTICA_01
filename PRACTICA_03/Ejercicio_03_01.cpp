@@ -1,7 +1,7 @@
 // Materia: Programación I, Paralelo 1
 // Autor: Gabriel Fernando Flores Santa Cruz
 // Fecha creación: 13/03/2024
-// Fecha modificación: 13/03/2024
+// Fecha modificación: 14/03/2024
 // Número de ejercicio: 1
 /* Problema planteado:Escribe un programa que muestre por consola los números de 1 a 100 (ambos incluidos
 y con un salto de línea entre cada impresión), sustituyendo los siguientes:
@@ -17,15 +17,15 @@ void CuentaNumeros ();
 
 int main(){
 
-    CuentaNumeros();
+    CuentaNumeros(); //Dentro del main solo se llama a la funcion donde se cuentan los numeros
     
     return 0;
 }
 
-void CuentaNumeros (){
+void CuentaNumeros (){ //Usamos los voids ya que los mensajes se desplegaran desde aqui
     for (int i = 1; i <= 100; i++)
     {
-        if (i % 3 == 0 && i % 5 == 0)
+        if (i % 3 == 0 && i % 5 == 0) // Hacemos las comparaciones como pide el ejercicio
         {
             cout << "fizzbuzz" << endl;
         } else if (i % 3 == 0)
